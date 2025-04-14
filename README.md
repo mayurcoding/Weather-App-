@@ -325,3 +325,34 @@ export default WeatherApp;
 Run the app and verify that the weather data is fetched and displayed correctly using Redux for state management.
 
 By implementing Redux, the app's state becomes centralized and easier to manage, especially as new features are added.
+
+
+## Troubleshooting
+
+If you encounter any issues while setting up or running the Weather App, here are some common problems and their solutions:
+
+### 1. API Key Issues
+- **Problem**: The app displays an error message saying the API key is invalid.
+- **Solution**: Double-check that you have replaced the placeholder API key in the code with your actual OpenWeather API key. Ensure there are no extra spaces or characters.
+
+### 2. Network Errors
+- **Problem**: The app fails to fetch weather data and shows a network error.
+- **Solution**: Verify your internet connection and ensure the OpenWeather API endpoint is accessible. You can test the endpoint in your browser or using a tool like Postman.
+
+### 3. CORS Errors
+- **Problem**: The browser console shows a CORS (Cross-Origin Resource Sharing) error.
+- **Solution**: If you're running the app locally, use a proxy server or a CORS extension in your browser to bypass the restriction. Alternatively, configure the API to allow requests from your domain.
+
+### 4. React Errors
+- **Problem**: The app crashes or shows a blank screen.
+- **Solution**: Check the browser console for error messages. Common issues include missing dependencies, incorrect imports, or syntax errors in the code.
+
+### 5. Deployment Issues
+- **Problem**: The app works locally but fails after deployment.
+- **Solution**: Ensure the `.env` file is correctly configured for the production environment. If using a platform like Vercel or Netlify, set the environment variables in the deployment settings.
+
+### 6. Rate Limiting
+- **Problem**: The app stops fetching data after multiple requests.
+- **Solution**: OpenWeather's free API tier has a limit on the number of requests per minute. Consider upgrading to a paid plan or implementing caching to reduce API calls.
+
+By addressing these issues, you can ensure a smoother experience while developing and using the Weather App.
