@@ -354,5 +354,3 @@ If you encounter any issues while setting up or running the Weather App, here ar
 ### 6. Rate Limiting
 - **Problem**: The app stops fetching data after multiple requests.
 - **Solution**: OpenWeather's free API tier has a limit on the number of requests per minute. Consider upgrading to a paid plan or implementing caching to reduce API calls.
-
-By addressing these issues, you can ensure a smoother experience while developing and using the Weather App.
